@@ -1,0 +1,348 @@
+.menu {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  /* display: flex; */
+  /* transform: translate(-50%,-50%); */
+}
+.menu a:hover {
+  color: orange;
+  transition-duration: 0.5s;
+}
+.header {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+.logo {
+  font-size: 40px;
+  font-weight: medium;
+  padding-left: 20px;
+  color: gray;
+}
+
+.consultation-button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 50px;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .consultation{
+    display: none;
+  }
+}@media (max-width: 700px) {
+  .con {
+    display: none;
+  }
+}@media (max-width: 800px) {
+  .consultation-button{
+    display: none;
+  }
+
+}
+/* @media (max-width: 500px) {
+  .menu a{
+    font-size: 10px;
+ }
+}@media (max-width: 700px) {
+  .menu a{
+    font-size: small;
+    font-weight: lighter;
+ }
+}@media (max-width: 800px) {
+  .menu a{
+     font-size: medium;
+  }
+} */
+/* ******************************Hero image******************** */
+.image {
+  background: url(https://www.lawcrossing.com/images/articleimages/4961.jpg)
+    no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  text-align: center;
+}
+.txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bolder;
+  font-size: xx-large;
+  margin: auto;
+  opacity: 0.7;
+  background: black;
+  /* background-color: linear-gradient(rgba(0, 0, 0, 0.8)); */
+  /* backdrop-filter: blur(5px); */
+  /* backdrop-filter: saturate(180%) blur(10px); */
+}
+.txt-br {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
+}
+
+/* ************************** Cards ************************* */
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px;
+}
+.row .col {
+  padding: 10px;
+  text-align: center;
+  margin-left: 2px;
+}
+.row .col:hover {
+  /* border: 1px solid rgb(108, 106, 106); */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: orange;
+  box-shadow: 0px 0px 6px #aaaaaa;
+}
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+}@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+/* ***************************************Practice Area ******************************************** */
+.cards-2 {
+  background: url(https://npr.brightspotcdn.com/dims4/default/27c123c/2147483647/strip/true/crop/1254x658+0+89/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwusf%2Ffiles%2F202005%2FLibraryBooks1_istock_021220.jpg);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  padding-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.practice {
+  text-align: center;
+}
+.col-2 {
+  text-align: center;
+  padding: 60px;
+}
+@media (max-width: 500px) {
+  .row-2 {
+    flex-direction: column;
+  }
+}@media (max-width: 700px) {
+  .row-2 {
+    flex-direction: column;
+  }
+}
+
+/* **************************** About Us ******************** */
+
+.about-us {
+  border: 3px solid orange;
+  margin: 40px;
+}
+.row-3 .col-3 {
+  text-align: center;
+  margin: 30px;
+  padding: 50px;
+}
+.heading-about {
+  /* text-align: center; */
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
+  /* width: 90px;
+      height: 30px; */
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+@media only screen and (max-width: 700px) {
+  .col-3 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .col-3 {
+    width: 100%;
+  }
+}
+
+/* **************** Contact-form ********************* */
+.contact-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.left {
+  background: url(https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRhcmslMjBjb2RlfGVufDB8fDB8fHww&w=1000&q=80)
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  /* height: 70vh; */
+}
+.img-txt {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  text-align: right;
+  color: white;
+  font-weight: bolder;
+  margin: auto;
+}
+.right {
+  padding: 30px 40px;
+  background: #efebeb;
+}
+@media only screen and (max-width: 700px) {
+  .left {
+    display: none;
+  }
+  .row-4 {
+    width: 100vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .right {
+    width: 100vh;
+  }
+}
+/* **************************** Meet team*****************************************   */
+.row-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px #aaaaaa;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: orange;
+}
+
+.col-5 {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .col-5 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .col-5 {
+    width: 100%;
+  }
+}
+/* *************************************** Map ********************************* */
+.img-map {
+  margin-top: 40px;
+  background: url(https://k8q3f6p8.rocketcdn.me/wp-content/uploads/2019/05/Google-Maps-Tips.png)
+    no-repeat center;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.col-6 {
+  text-align: left;
+  color: white;
+  opacity: 0.7;
+  background: black;
+  height: 100%;
+  width: 30%;
+  margin-left: 18vh;
+  padding: 40px;
+}
+/* ************************ End ******************* */
+.end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+.col-7 i {
+  color: orange;
+  padding: 8px;
+}
+.col-7 a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  .end {
+    flex-direction: column;
+  }
+}@media (max-width: 700px) {
+  .end {
+    flex-direction: column;
+  }
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding: 10px 80px;
+  text-align: center;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: full;
+}
